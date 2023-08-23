@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+<!-- Your HTML Here -->
+<body>
+<div class="card">
+    <div class="profile_pic">
+        <img src="vienna.jpg"/>
+    </div>
+    <div class="personal_info">
+        <h2>Landon Wilson is a 4th year Computer Science student 
+            from Saint Simons Island, Georgia. He loves to promote diversity
+            by volunteering at International Ambassador events around campus.</h2>
+    </div>
+
+
+    <button id="surprise">Surprise Me!</button>
+    <img id="buzz" src="buzz.jpg" style="display: none;">
+    <!-- JS function to show surprise image-->
+    <script>
+        const showImageButton = document.getElementById("surprise");
+        const myImage = document.getElementById("buzz"); 
+        showImageButton.addEventListener("click", () => {
+            showImageButton.style.display = "none"; 
+            myImage.style.display = "block"; 
+        });
+     </script>
+</div>
+</body>
+</html>
